@@ -8,24 +8,22 @@ export default class MovieCard extends React.Component {
 
     return (
       <View style={styles.container}>
-        <View>
           <View style={{borderBottomWidth:10, borderColor:'#FFFFFF'}} >
             <Image
-              resizeMode={'cover'}
               style={styles.imagem}
+              resizeMode={'cover'}
               source={{uri:FilmeUrl}}
             />
           </View>
           <View style={styles.informacoes} >
             <View style={styles.filmenota}>
-              <Text style={{ color:'#FFF', fontSize: 13}}>{this.props.FilmeNota}</Text>
+              <Text style={{ color:'#FFFF', fontSize: 13}}>{this.props.FilmeNota}</Text>
             </View>
             <View style={styles.titulo} >
               <Text style={{fontWeight:'bold'}} >{this.props.FilmeTitulo}</Text>
               <Text style={{color:'#808B96'}} >{this.props.FilmeData}</Text>
             </View>
           </View>
-        </View>
       </View>
     );
   }
@@ -40,10 +38,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   imagem: {
-    flex: 1,
     width: 390,
     height: 250,
-    backgroundColor: '#ccc',
   },
   titulo: {
     borderColor: '#FFFF',
